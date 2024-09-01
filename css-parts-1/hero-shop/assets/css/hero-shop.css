@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: system-ui;
+}
+
+.container {
+  max-width: 100%;
+  height: 100vh;
+  background-image: url("../img/Sharp.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.contents {
+  width: 920px;
+  margin-inline: auto;
+  color: #fff;
+  padding: 0 130px;
+}
+
+.contents h1 {
+  font-weight: 700;
+  font-size: 80px;
+}
+
+.contents h3 {
+  margin-top: 24px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.contents a {
+  display: inline-flex;
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 23px;
+  padding: 16px 40px;
+  background-color: #094bac;
+  border-radius: 32px;
+  color: #fff;
+  text-decoration: none;
+}

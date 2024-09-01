@@ -1,0 +1,108 @@
+body {
+  background-color: #F4D04E;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.card {
+  background-color: white;
+  color: #111;
+  width: 384px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #111;
+  /* #ff0000 - f00 - red */
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 8px 8px 0px 0px;
+
+}
+
+/* 
+  prefix - ön ek
+  suffix - sona ek
+*/
+
+.card-img {
+  width: 100%;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.card h6 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #7F7F7F;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+/*sadece a etiketinde renk kodları kalıtsal gelemiyor
+sebebi user-agent kısmında a etiketlerine doğrudan tanım yapılmış olması -
+a etiketi kendi davranışı inline*/
+.card-tags {
+  margin-bottom: 12px;
+}
+
+.card-tags a {
+  color: #111111;
+  line-height: 21px;
+  font-weight: 800;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #F4D04E;
+
+  /* padding-left: 12px;
+  padding-right: 12px; */
+  /* padding-inline: 12px; eğer sağdan soldan ölçüler eşitse paddin-inline kullanabiliriz */
+
+  /* padding-top: 4px;
+  padding-bottom: 4px; */
+  /* padding-block: 4px; eğer üstten alttan ölçüler eşitse padding-block kullanılabilir */
+
+  /*kısa yazım - ilki yukarıdan aşağıdan, ikincisi sağdan soldan*/
+  padding: 5px 12px;
+  border-radius: 4px;
+
+  /*inline elementler dikey eksende padding ve margin propertylerini stabil olarak gösteeremiyor. 
+  Diğer elementler ike iç içe geçme oluyor bu duruma ise overlap deniyor. 
+  Bunun çözümü için display block bir alternatif olabilir fakat display block davranışı köklü şekilde etkilediği için 
+  inline özellikleri koruyarak dikeyden doğru padding ve margin için display. inline-block özelliğini kullanmalıyız*/
+  display: inline-block;
+}
+
+/*css elementlerinin durumlarını seçebiliriz
+  elementin ön tanımlı normal hali dışındaki
+  durumları seçmek için pseudo (südo) seçiciler
+  kullanıyoruz*/
+.card-tags a:hover {
+  color: white;
+}
+
+.card-footer a{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 800;
+  color: #111;
+  text-decoration: none;
+}
+
+.card-footer img{
+  vertical-align: middle;
+  margin-right: 8px;
+}
